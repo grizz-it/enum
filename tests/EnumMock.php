@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright (C) GrizzIT, Inc. All rights reserved.
  * See LICENSE for license details.
@@ -14,6 +15,6 @@ use GrizzIt\Enum\Enum;
  */
 class EnumMock extends Enum
 {
-    const FOO = 'foo';
-    const BAR = 'bar';
+    public const FOO = 'foo';
+    public const BAR = 'bar';
 }

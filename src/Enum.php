@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright (C) GrizzIT, Inc. All rights reserved.
  * See LICENSE for license details.
@@ -15,21 +16,21 @@ abstract class Enum
      *
      * @var array
      */
-    private static $classConstants;
+    private static array $classConstants;
 
     /**
      * Contains the value of the enum.
      *
      * @var mixed
      */
-    private $value;
+    private mixed $value;
 
     /**
      * Constructor
      *
      * @param mixed $value
      */
-    public function __construct($value)
+    public function __construct(mixed $value)
     {
         $this->value = $value;
     }
@@ -80,7 +81,7 @@ abstract class Enum
      *
      * @return mixed
      */
-    public static function __callStatic(string $name, array $arguments)
+    public static function __callStatic(string $name, array $arguments): mixed
     {
         self::mapConstants(static::class);
 

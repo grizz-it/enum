@@ -19,8 +19,8 @@ use GrizzIt\Enum\Enum;
  */
 class MyEnum extends Enum
 {
-    const FOO = 'foo';
-    const BAR = 'bar';
+    public const FOO = 'foo';
+    public const BAR = 'bar';
 }
 ```
 
